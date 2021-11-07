@@ -1,4 +1,5 @@
 import passportSocketIo from "passport.socketio";
+require('dotenv').config();
 
 let configSocketIo = (io,cookieParser,sessionStore) => {
   io.use(passportSocketIo.authorize({
