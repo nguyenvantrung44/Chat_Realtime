@@ -1,5 +1,6 @@
 import session from "express-session";
 import connectMongo from "connect-mongo";
+require('dotenv').config();
 
 let MongoStore = connectMongo(session);
 
@@ -7,7 +8,7 @@ let MongoStore = connectMongo(session);
  * nơi lưu trữ session
  */
 let sessionStore = new MongoStore({
-  url: `${process.env.DB_CONNECTION}://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+  url: `mongodb://hozachat:hozachat@cluster0-shard-00-00.tqaqq.mongodb.net:27017,cluster0-shard-00-01.tqaqq.mongodb.net:27017,cluster0-shard-00-02.tqaqq.mongodb.net:27017/hozachat?ssl=true&replicaSet=atlas-p9ekey-shard-0&authSource=admin&retryWrites=true&w=majority`,
   autoReconnect: true
   // autoRemove: "native"
 });
