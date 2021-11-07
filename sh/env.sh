@@ -1,10 +1,10 @@
 # config database enviroment variable
-export DB_CONNECTION=mongodb
-export DB_HOST=localhost
-export DB_PORT=27017
-export DB_NAME=chathoza
-export DB_USERNAME=""
-export DB_PASSWORD=""
+# export DB_CONNECTION=mongodb
+# export DB_HOST=localhost
+# export DB_PORT=27017
+# export DB_NAME=chatzalo_nodejs
+# export DB_USERNAME=""
+# export DB_PASSWORD=""
 
 #config app enviroment
 export APP_HOST=ec2-54-169-181-35.ap-southeast-1.compute.amazonaws.com
