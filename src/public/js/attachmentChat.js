@@ -1,7 +1,7 @@
 function attachmentChat(divId) {
   $(`#attachment-chat-${divId}`).unbind("change").on("change", function () {
     let fileData = $(this).prop("files")[0];
-    let limit = 1048576; // byte   = 1MB
+    let limit = 5048576; // byte   = 1MB
 
     if (fileData.size > limit) {
       alertify.notify("Ảnh upload tối đa cho phép là 1MB", "error", 7);

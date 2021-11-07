@@ -31,7 +31,7 @@ function updateUserInfo() {
   $("#input-change-avatar").bind("change", function(){
     let fileData = $(this).prop("files")[0];
     let math = ["image/png", "image/jpg", "image/jpeg"];
-    let limit = 1048576; // byte   = 1MB
+    let limit = 5048576; // byte   = 1MB
 
 
     if($.inArray(fileData.type, math) === -1) { 
