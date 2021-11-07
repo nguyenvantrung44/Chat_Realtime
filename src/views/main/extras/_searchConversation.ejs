@@ -1,0 +1,13 @@
+<% allConversations.forEach(function(conversation) { %>
+  <% if (conversation.members) { %>
+    <li data-chat="<%= conversation._id %>">
+        <img src="/images/users/group-avatar-trungquandev.png" alt="" />
+        <%= conversation.name %>
+    </li>
+  <% } else { %>
+    <li data-chat="<%= conversation._id %>">
+        <img src="/images/users/<%= conversation.avatar %>" alt="" />
+        <%= conversation.username %>
+    </li>
+  <% } %>
+<% }); %>

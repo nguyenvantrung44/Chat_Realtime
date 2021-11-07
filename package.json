@@ -1,0 +1,52 @@
+{
+  "name": "chatzalo_nodejs",
+  "version": "1.0.0",
+  "description": "chat zalo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenvantrung44/chatzalo_nodejs.git"
+  },
+  "author": "Van Trung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenvantrung44/chatzalo_nodejs/issues"
+  },
+  "homepage": "https://github.com/nguyenvantrung44/chatzalo_nodejs#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^2.5.7",
+    "express": "^4.17.1",
+    "express-ejs-extend": "0.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^4.13.9",
+    "multer": "^1.4.3",
+    "nodemailer": "^4.4.2",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport.socketio": "^3.7.0",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "pem": "^1.14.4"
+  }
+}
