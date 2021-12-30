@@ -15,7 +15,7 @@ export SESSION_KEY="express.sid"
 export SESSION_SECRET="mySecret"
 
 #config admin email account
-export MAIL_USER=vantrung44.it@gmail.com
+export MAIL_USER=***
 export MAIL_PASSWORD=***
 export MAIL_HOST=smtp.gmail.com
 export MAIL_PORT=587
